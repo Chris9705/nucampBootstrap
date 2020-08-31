@@ -1,7 +1,7 @@
 {
   "name": "nucampsite",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsite review site",
+  "description": "Git and NPM",
   "main": "index.html",
   "dependencies": {
     "bootstrap": "^4.5.0",
@@ -12,10 +12,11 @@
     "lite-server": "^2.5.4"
   },
   "scripts": {
-    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server"
+
   },
-  "author": "",
+  "author": "Chris Archie",
   "license": "ISC"
 }
