@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles copy.css" />
   
   
     <title>NuCamp: A Better Way To Camp</title>
@@ -21,38 +21,59 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="/img/ghost.png" class="img-fluid" height="30" width="30"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-users fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-code fa-lg"></i> Learn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-wrench fa-lg"></i> Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-shopping-basket fa-lg"></i> Products</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row  align-items-center">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                    
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                  </div>
                  <div class="col-md-4 col-xl-2 mt-4">
-                    <a role="banner" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a role="banner" class="btn btn-outline-info btn-lg" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
                 </div>
              </div>
         </div>
     </header>
 
-        <!--Modal Start-->
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-info">
                     <h3 class="modal-title bg-info text-white">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                         <form id="reserveForm">
                                 <div class="form-group row">
-                                    <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>
-                                    <div class="col-sm-6">
+                                    <label for="numCampers" class="col-form-label col-sm-6">Number of Campers</label>                                    <div class="col-sm">  
+                                       
+                                    <div class="col">
                                         <select class="form-control form-group" name="numCampers" id="numCampers">
                                             <option>Select...</option>
                                             <option value="1">1</option>
@@ -64,7 +85,7 @@
                                         </select>
                                     </div>
                                     </div>
-                                
+                                </div>
                                 <!-- Date-->
                                 <div class="form-group row">  
                                     <label class="col-form-label col-sm-6">Date</label>
@@ -91,38 +112,14 @@
                             </div>
                         </div>
                      </form> 
-                     </div>
                 </div>
             </div>
         </div>
-   
-    <!--Modal End-->
 
-    <!--Navbar Start-->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="30"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contacts</a></li>
-                </ul>
-                <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
-                    </a>
-                </span>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End-->
+    </div>
+    
+    
 
-    <!-- Modal for login-->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -159,10 +156,8 @@
             </div>
         </div>
     </div>
-    <!--End Modal-->
 
-    <!-- Carousel start-->
-    <div class="container">
+  <!--  <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -205,17 +200,15 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <!--Carousel End-->
+        </div> -->
 
-        <!-- Body Elements-->
          <div class="row row-content align-items-center">
               <div class="col-sm-4 order-sm-last col-md-3">    
                  <h2 class="test-sm-right">Discover & Review</h2>
                  </div>
                     <div class="col">
                         <div class="media">
-                            <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail">
+                            <img class="d-flex mr-3 img-thumbnail" src="/img/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg" alt="Breadcrumb Trail thumbnail">
                             <div class="media-body align-self-center">
                                 <h3 class="media-head">Our Campsites</h3>
                                 <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>  
@@ -252,10 +245,8 @@
                     </div>     
                 </div>
              </div>                 
-    </div>
-    <!--End of body divs -->
+    </div> 
 
-    <!-- Optional container-->
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-md-7 mx-auto align-center">
@@ -263,52 +254,10 @@
                 <a href="http://www.facebook.com" class="btn btn-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 131 Likes</i> </a>
                 <a href="http://www.facebook.com" class="btn btn-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Share</a>
                  </div>
-                 <div class="card">
-                     <h3 class="card-header bg-danger text-sm-center">Monty Python Ipsum</h3>
-                    <div class="card-body">
-                        <form id="montPython">
-                        <div class="row">
-                            <div class="col-6 mx-auto">
-                                <label for="paragraph" class="text-primary">Paragraph:</label>
-                                <input id="paragraph" type="number" min="1" max="99" class="text-align center pl-0.5em">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <label class="col-form-label col-sm-3" for="flying">Flying Circus</label>
-                            <input type="checkbox" class="form-group" name="fcOption" id="flying">
-
-                            <label class="col-form-label col-sm-3" for="grail">Holy Grail</label>
-                            <input type="checkbox" class="form-group" name="hgOption" id="grail">
-
-                            <label class="col-form-label col-sm-3" for="the25th">Christmas Day</label>
-                            <input type="checkbox" class="form-group" name="cdOption" id="the25th">
-                        </div>
-                        <div class="row">
-                            <label class="col-form-label col-sm-3" for="life">Life of Brian</label>
-                            <input type="checkbox" class="form-group" name="lbOption" id="life">
-
-                            <label class="col-form-label col-sm-3" for="meaning">Meaning of Life</label>
-                            <input type="checkbox" class="form-group" name="molOption" id="meaning">
-
-                            <label class="col-form-label col-sm-3" for="meditation">New Life</label>
-                            <input type="checkbox" class="form-group" name="nlOption" id="meditation">
-                        </div>
-                        <div class="row">
-                            <button type="button" class="btn btn-danger  btn-lg text-white mx-auto">Get on With It!</button>
-                        </div>                       
-                        <div class="row row ">
-                          <p class="d-none d-sm-block  text-center"><i><strong>a sperm is wasted God gets quite irate. Oh, what wouldn't I give to be spat at in the face? I sometimes hang awake at night, dreaming of being spat at in the face
-                                There's no Messiah in here. There's a mess all right, but no Messiah. Now go away! This is boring. Let's go watch a stoning. I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! I'm not a roman mum, I'm a kike, a yid, a heebie, a hook-nose, I'm kosher mum, I'm a Red Sea pedestrian, and proud of it!  
-                               Is your wife a goer, eh? Know what I mean? Know what I mean? Nudge, nudge! Know what I mean? Say no more! What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. Well, I think I should point out first, Brian, in all fairness, we are not, in fact, the rescue committee. However, I have been asked to read the following prepare statement on behalf of the movement. "We the People's Front of Judea, brackets, officials, end brackets, do hereby convey our sincere fraternal and sisterly greetings to you, Brian, on this, the occasion of your martyrdom."</strong> </i></p>  
-                        </div>  
-                        </form>
-                    </div>                                                
-                </div>
+                
             </div>  
          </div>
     </div>  
-
-    <!-- Footer-->
     <footer class="site-footer">
     <div class="container">
             <div class="row">
@@ -334,8 +283,7 @@
             </div>
         </div>
     </div>
-    </footer>
-
+   </footer>
 
    <!-- JQuery must come first, then popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

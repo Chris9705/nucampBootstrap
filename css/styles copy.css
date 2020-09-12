@@ -1,0 +1,114 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #373c5c;
+}
+
+h1 {
+    font-family: "Lobster", cursive;
+    color: rgb(66, 52, 145);
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 100ox;
+}
+
+.img-thumbnail {
+    height: 200px;
+    margin-right: 30px;
+
+}
+.nav-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+h3 {
+    color: #d10cf8;
+    font-family: 'Iceland',cursive;
+    font-size: 80px;
+}
+h2 {
+    color: rgb(236, 123, 17);
+    font-family: "Caveat", cursive; 
+    font-size: 50px;
+}
+
+header h2 {
+    color: #CEC8FF;
+}
+
+.site-footer {
+    background-image: linear-gradient(to right,#fda31b,#eea509b6,rgb(211, 132, 248));
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637DD,#3046C5, #60106B);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    margin: 0%;
+    background-image: linear-gradient(to left,#d10cf8,#9209eeb6,rgb(93, 12, 243));
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color:white;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    border: solid #5637DD
+}
+
+
+p {
+    color: white;
+}
+
+.fa-bars {
+    color: #DDD;
+    font-size: 30px !important;
+}
+
+/*--banner--*/
+
+#banner {
+    background-image: linear-gradient(to left,#f8d50c,#eea509b6,rgb(243, 58, 12));
+    color: white;
+    padding-top: 5%;
+}
+
+.nutitle {
+   font-size: 25px 
+}
+
+.img-fluid {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.bottom-img {
+    width: 100%;
+}
+
+p {
+    color: #CEC8FF;
+    font-size: 30px;
+    font-family: 'Metal Mania', cursive;
+}
